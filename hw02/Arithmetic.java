@@ -45,9 +45,28 @@ public class Arithmetic{
         double youPay$ = ((int)((totalPreTaxCost$ * paTax) * 100) /100.0) + totalPreTaxCost$;
         
         //print out receipt
-        //print out notification that this sections is pretax
-        System.out.println("Cost of Goods PreTax");
         
+        /*System.out.println("Cost of Goods");
+        //print out individual cost of goods in order of
+        // Item     Number Bought       CostPerGood     Cost
+        //The print result should be in grid format
+        System.out.println("Item        NumberBought        CostPerGood         CostPreTax         CostAfterTax");
+        System.out.println("Sock            " + nSock +     "                " + sockCost$ +     "                 " + totalSockCost$ +    "                 " + taxSock$);
+        System.out.println("Glass           " + nGlass +    "                " + glassCost$ +    "                 " + totalGlassCost$+    "                 " + taxGlass$);   
+        System.out.println("Envelope        " + nEnvelope + "                " + envelopeCost$ + "                 " + totalEnvelopeCost$  "                 " + taxEnvelope$);
+        System.out.println("The total Cost before tax is " + totalPreTaxCost$ " and the total cost after tax is" + youPay$);
+       */
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        System.out.println("Cost of Goods PreTax");
         //print out individual cost of goods in order of
         // Item     Number Bought       CostPerGood     Cost  
         System.out.println("Item        NumberBought        CostPerGood         CostPreTax");
@@ -72,6 +91,7 @@ public class Arithmetic{
         //Print total posttax cost
         System.out.println("Total Cost: " + youPay$);
         
+    
         
         
         
