@@ -12,7 +12,7 @@ import java.util.Scanner;
             
             //this is for testing purposes
                 Scanner input = new Scanner(System.in);//declared scanner as a variable input
-                System.out.println("the contents of this program is restricted to authorized users ");
+                /*System.out.println("the contents of this program is restricted to authorized users ");
                 System.out.println("You will be prosecuted by the law if this message is seen but you run the program ");
                 System.out.print("enter your card1 in numerical form ");
                 int card1 = input.nextInt();
@@ -24,14 +24,14 @@ import java.util.Scanner;
                 int card4 = input.nextInt();
                 System.out.print("enter your card5 numerical form ");
                 int card5 = input.nextInt();
-                
-                /*/ /random number from 1-52 for five cards
+                */
+                //random number from 1-52 for five cards
                 int card1 = (int)(Math.random()*52)+1; //first card
                 int card2 = (int)(Math.random()*52)+1;//second card
                 int card3 = (int)(Math.random()*52)+1; //third card
                 int card4 = (int)(Math.random()*52)+1;//fourth card
                 int card5 = (int)(Math.random()*52)+1; //fifth card
-                */
+                
               //suits for five cards
                 String suit1 = "0"; // declare the variable for suits
                 String suit2 = "0";
