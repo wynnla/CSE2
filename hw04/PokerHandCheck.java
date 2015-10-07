@@ -11,7 +11,7 @@ import java.util.Scanner;
             public static void main(String[] args) {
             
             //this is for testing purposes
-                Scanner input = new Scanner(System.in);//declared scanner as a variable input
+               // Scanner input = new Scanner(System.in);//declared scanner as a variable input
                 /*System.out.println("the contents of this program is restricted to authorized users ");
                 System.out.println("You will be prosecuted by the law if this message is seen but you run the program ");
                 System.out.print("enter your card1 in numerical form ");
