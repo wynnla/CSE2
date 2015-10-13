@@ -13,6 +13,7 @@ public class BarGraph{
     public static void main(String args[]){ //declare main method
         double Mon, Tue, Wed, Thu, Fri, Sat, Sun; //initialize everythings
         Scanner input = new Scanner(System.in);
+       
         System.out.print("Enter the expenses for Monday ");
             Mon = input.nextDouble();
         System.out.print("Enter the expenses for Tuesday ");
@@ -27,7 +28,7 @@ public class BarGraph{
             Sat = input.nextDouble();
         System.out.print("Enter the expenses for Sunday ");
             Sun = input.nextDouble();
-            
+        
             
         System.out.print("Expenses for Monday:      " );
             int count = 1;

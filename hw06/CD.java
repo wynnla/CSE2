@@ -12,10 +12,10 @@ import java.util.Scanner;
                 Long.parseLong(barcode); //converts the remaining 9 integers to long
                 }
                 else{
-                Long.parseLong(barcode); //convert entire string to long
-                lastdigit = (barcode.length-1); //obtain last place index
-                Long.parseLong(lastdigit); //convert string index to long
-                long digitvalue = (long)((barcode/10));//gets rid of the last digit since that will be our check
+                    Long.parseLong(barcode); //convert entire string to long
+                    lastdigit = (barcode.length-1); //obtain last place index
+                    Long.parseLong(lastdigit); //convert string index to long
+                    long digitvalue = (long)((barcode/10));//gets rid of the last digit since that will be our check
                 }
             
                 long digitvalue = (long)((barcode/10));//gets rid of the last digit since that will be our check
