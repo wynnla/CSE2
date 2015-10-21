@@ -1,3 +1,10 @@
+/* Winston La
+homework 07
+the task at hand is to generate an alternating sprial of hashtags and slashes
+take in the user's length of the printout as well as the user's 
+
+
+*/
 import java.util.Scanner;
 public class  Twisty{ //declares class
 	public static void main(String[] args) {
@@ -81,7 +88,7 @@ public class  Twisty{ //declares class
 			
 			for (j = 0; j <= length; j++ ){ // begin printing out inner loop
 				 
-				if(j%width == i && a==true) { //if the remainder is the same as i
+				if(j%width == i && a==true) { //if the remainder is the same as i(aka the current line)
                     System.out.print("#");//then that means that a character must be printed
                     a = false;              //the first one is #. switch to \ on next X
                         
@@ -109,6 +116,6 @@ public class  Twisty{ //declares class
 			System.out.println(""); //make sure to line feed and carriage return on a new line.
 		}//ends i loop
 		
-	}
+	}//ends method
 
-}
+}//ends class
