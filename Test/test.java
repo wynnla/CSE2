@@ -7,28 +7,22 @@
 
 import java.util.Scanner;
 public class test{
-  public static void main(String []arg){
-    int k = 22;
-   char x = 'l';
-      switch (x){
-  case 'y':
-    System.out.println('y');
-  case 'Y': 
-    System.out.println('Y'); 
-    k /= 2;
-  case 'n':
-    break;
-  case 'N':
-    System.out.println('N');
-    k += 5;
-    break;
-  default:
-    System.out.println("default ");
-    k /=22 ;
-}
-System.out.printf("k = %2.2f\n", (double)k);
+
+    public static void main(String args[]){
+      int i = 0;
+      while (i < 10) {
+        i++;
+        System.out.println("i: "+ i);
+        //while (i > 5 && i < 10 ){
+          //i += 2;
+          //System.out.println("i: "+ i);
+        //}
+        for (; i>5 && i <10; i +=2){
+          System.out.println("i: "+i);
+        }
+      }
+    }
+    
+    
   
-  
-  
-  }
 }
