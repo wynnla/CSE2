@@ -53,7 +53,7 @@ to find the grade. Indicate if the grade was found or not, and how many iteratio
 		
 		System.out.print("Enter a grade to search for: ");
 		int theNum= input.nextInt();
-		linearSearch(studentGrade, theNum);
+		binarySearch(studentGrade, theNum);
 		scramble(studentGrade);
 		System.out.println("Scrambled");
 		printArray(studentGrade);
@@ -89,7 +89,7 @@ to find the grade. Indicate if the grade was found or not, and how many iteratio
     public static void linearSearch(int array[], int key){
         for(int i= 0; i < array.length; i++){
             if (array[i] == key){
-            System.out.println(key + "is found within "+ i + " iterations.");
+            System.out.println(key + " is found within "+ i + " iterations.");
             return;
             }
         }
@@ -97,16 +97,39 @@ to find the grade. Indicate if the grade was found or not, and how many iteratio
     }
     
     public static void scramble(int[] array){
-            for (int i = 0; i < array.length; i ++){
-                int index = (int)(Math.random()*array.length);
-                int temp = array[i];
-                array[i] = array[index];
-                array[index] = temp;
-            }
+            for (int i = 0; i < array.length; i ++){            //inner loop to scramble
+                int index = (int)(Math.random()*array.length);  //create a random number for the array length
+                int temp = array[i];                            //store the value at the current index in temp
+                array[i] = array[index];                        //give the value of the current index the value of another index
+                array[index] = temp;                            //meanwhile, the value of the other index is given the value of the previous
+            }                                                   //this is to prevent duplication and overwriting of indexes.
             
         }//end of Shuffle
     
-    
+    public static int binarySearch(int[] array, int key){
+        //initialize all the lower values to be used
+        int low = 0;                                            //this will keep track of the lower bound
+        int high = array.length -1;                             // this will keep track of the upper bound
+        int mid =0;                                             // this will find the middle of the bounds
+        int count = 0;                                                      //iterations    
+        while (high >= low){                                    //while the upper limit is greater than or equal to the lower limit
+            mid = (low + high)/2;                               //we have yet to cover everything. locate the middle.
+            if (key < array[mid]){                              //if the number you are searching for is less. the number is in the lower half
+                high = mid -1;                                  //adjust your upper bound accordingly
+            }   
+            else if (key == array[mid]){                        //if you found it. GOOD.
+                System.out.println("Found in "+ count + " iterations");
+                return array[mid];
+            }
+            else{                                               //if not either of the prior situations, it must be in the upper half. 
+                low = mid + 1;
+            }
+        count++   ;     //increment your iterations
+        }
+        
+        System.out.println("Number not Found. Surrounding numbers are: " + array[mid+1] +" and "+ array[mid-1]); //print out the two numbers surrounding it if not found.
+        return -1;
+    }
     
     
     
